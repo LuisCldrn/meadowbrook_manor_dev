@@ -44,9 +44,9 @@ export default function Navbar() {
             />
             <NavDropdown/>
             </div>
-            <div className="links bg-[#4A6049] bg-center flex justify-center">
+            <div className="links h-[5vh] bg-[#4A6049] items-center gap-10 bg-center flex justify-center font-semibold">
                 {navItems.map(({href, label}) => (
-                    <Link key={href} href={href}> 
+                    <Link className=' hover:text-gray-400' key={href} href={href}> 
                     {label}
                     </Link>
                 ))
