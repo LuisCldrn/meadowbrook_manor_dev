@@ -59,6 +59,10 @@ body {
 .Bolingbrook_loc:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("/images/Bolingbrook_front.png");
   background-size: cover;
-  
+
+}
+
+.card_rev {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
