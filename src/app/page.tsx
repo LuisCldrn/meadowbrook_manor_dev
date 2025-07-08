@@ -1,4 +1,5 @@
 import LocationOptions from "@/components/LocationOptions";
+import WhyMead from "@/components/WhyMead";
 import Image from "next/image";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
     <div className="reviews bg-[#f0f0f0] flex flex-col justify-center items-center">
       <h3 className="testimonials pt-10 text-lg text-black font-semibold">TESTIMONIALS</h3>
       <h2 className="text-black text-2xl font-bold" >WHAT OUR PATIENTS ARE SAYING</h2>
-      <div className="reviews_area flex p-10 gap-[1vw] h-[50vh] m-[3vh]">
+      <div className="reviews_area flex p-10 gap-[3vw] h-[50vh] m-[3vh]">
         <div className="card_rev w-full relative rounded-4xl flex flex-col bg-[#4A6049] items-center justify-center gap-3 pt-[75px] p-5">
 
           <div className="rev_icon absolute img_area flex items-center justify-center justify-self-start bg-pink-500 rounded-full w-[150px] h-[150px] text-7xl -top-15 ">M</div>
@@ -48,6 +49,13 @@ export default function Home() {
         </div>
         
       </div>
+    </div>
+    <div className="why_mead flex flex-col justify-start items-center p-15 pb-48 gap-4 bg-[#2A462A]">
+      <h2 className="font-bold text-4xl" >WHY MEADOWBROOK</h2>
+      <p>With over 25 years of trusted care in the Chicagoland area, Meadowbrook Rehabilitation is dedicated to providing personalized, five-star post-hospital recovery and long-term care in a warm, healing environment. We focus on dignity, customized care, and quality of life—because every individual deserves to heal with respect and support.</p>
+    </div>
+    <div className="why_mead_cards p-10 pt-0 pb-0 bg-white">
+      <WhyMead/>
     </div>
     </>
     

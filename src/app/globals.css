@@ -47,17 +47,17 @@ body {
 }
 
 .Naperville_loc:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("/images/Naperville_front.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/Naperville_front.png");
   background-size: cover;
 }
 
 .Lagrance_loc:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("/images/Lagrange_front.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/Lagrange_front.png");
   background-size: cover;
 }
 
 .Bolingbrook_loc:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("/images/Bolingbrook_front.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/Bolingbrook_front.png");
   background-size: cover;
 
 }
