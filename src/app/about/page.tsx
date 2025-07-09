@@ -107,11 +107,9 @@ export default function About() {
               backgroundImage: `linear-gradient(#00000085, #00000085), url(${item.img})`, backgroundSize: 'cover',
               backgroundPosition: 'center'
             }} >
-              <h4 className="text-[#99CF97] h-24 text-5xl text-center">{item.title}</h4>
+              <h4 className="text-[#99CF97] flex justify-center items-center h-24 text-4xl text-center">{item.title}</h4>
               <p className='text-lg text-center w-72 h-72 font-bold ' >{item.desc}</p>
-
             </div>
-
           </div>
         ))}
       </div>
@@ -123,7 +121,6 @@ export default function About() {
 
 
         <div className='flex flex-col md:flex-row w-max-screen justify-evenly pb-12 bg-white' >
-
               <div className='flex flex-col justify-center items-center bg-[#4A6049] w-108 h-96 rounded-4xl gap-4 text-white' >
                 <img src="/images/about/employee 1.png"></img>
                 <h4 className="text-lg">Dedicated, Experienced Staff</h4>
@@ -136,9 +133,6 @@ export default function About() {
                 <p className='text-xs text-center w-80' >Unlike most rehab programs, our in-house therapists provide consistent care throughout the patient’s stay—up to 7 days a week—to ensure continuity and better outcomes.</p>
               </div>
 
-
-
-adding to test
 
         </div>
 
