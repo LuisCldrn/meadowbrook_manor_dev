@@ -1,3 +1,152 @@
+//import Image from 'next/image'
+
 export default function About() {
-    return <h1>About Page</h1>;
-  }
+
+  const patientCareCards = [
+    {
+      id: 1,
+      icon: '/images/about/patient 1.png',
+      title: 'Patient-Centered Approach',
+      desc: "Care is tailored to each patient's values, lifestyle, and personal needs.",
+    },
+    {
+      id: 2,
+      icon: '/images/about/parental-control 1.png',
+      title: 'Family Collaboration',
+      desc: "Families are actively involved in care planning and decision-making.",
+    },
+    {
+      id: 3,
+      icon: '/images/about/arrows 1.png',
+      title: 'Flexible Routines',
+      desc: "Daily schedules are adapted to support comfort and individual preferences.",
+    },
+    {
+      id: 4,
+      icon: '/images/about/compassion 1.png',
+      title: 'Compassionate Care Philosophy',
+      desc: "Meadowbrook prioritizes dignity, respect, and personalized healing.",
+    }
+  ]
+
+  const servicesCards = [
+    {
+      id: 1,
+      img: '/images/about/spa.jpg',
+      title: 'Spa Services Meadowbrook',
+      desc: 'Rehabilitation offers professional salon and spa services during your stay, adding that extra touch to provide the healthy, happy lifestyle you want.'
+    },
+    {
+      id: 2,
+      img: '/images/about/cafe.jpg',
+      title: 'Café and Bistro',
+      desc: 'Visit with family or relax after a successful day of therapy. Our Café and Bistro is open throughout the day and offers a wide selection of coffee, ice cream, and snacks for all to enjoy.'
+    },
+    {
+      id: 3,
+      img: '/images/about/restaurant.jpg',
+      title: 'Five-Star Dining Experience',
+      desc: 'Our restaurant-style dining allows for our patients to experience fine dining in an environment that caters to culture and nutrition. Our wide array of options is sure to meet everyone needs.'
+    },
+    {
+      id: 4,
+      img: '/images/about/serene.jpg',
+      title: 'Serene Services',
+      desc: 'Our goal at Meadowbrook is to provide 5-star quality service in a healing environment. Our staff is fully trained to deliver the utmost quality care while focusing on your healing and well-being.'
+    }
+  ]
+
+
+
+  return (
+    <div className="max-w-screen" >
+      {/* banner section */}
+      <div className=' h-60 md:h-80 bg-center bg-cover font-bold ' style={{ backgroundImage: `linear-gradient(#00000085, #00000085), url('/images/about/banner.jpg')` }}>
+        <h1 className="flex justify-center py-12 text-6xl ">About Us</h1>
+        <p className="flex justify-center text-2xl ">Providing state-of-the-art post-hospital rehabilitation and customized care services to the Chicagoland area for over 25 years</p>
+      </div>
+
+      {/* mission secion */}
+      <div className="bg-white text-black w-full" >
+        <h2 className="flex justify-center py-12 text-4xl">
+          Our Mission
+        </h2>
+        <div className="w-full flex justify-center items-center">
+          <p className="flex justify-center w-156 pb-12 text-center">
+            Human dignity and personal pride do not diminish with age or illness, but continue throughout the life cycle. Recognition of this, in each individual, is the priority of Butterfield Health Care Group. Our goal – the creation of a supportive environment in which each person is motivated to regain and/or retain the maximum level of function, both physically and mentally, with continuing concern for the quality of life underscores all our efforts.
+          </p>
+        </div>
+        <h2 className="flex justify-center pt-12 text-4xl text-[#2A462A]">
+          Patient Centered Care
+        </h2>
+
+        <div className='flex flex-col md:flex-row px-66 pb-12' >
+          {patientCareCards.map((item) => (
+            <div key={item.id} className='flex flex-col justify-center items-center h-96 w-full'>
+              <div className='flex flex-col justify-center items-center bg-[#4A6049] w-80 h-66 rounded-4xl gap-4 text-white' >
+                <img src={item.icon}></img>
+                <h4>{item.title}</h4>
+                <p className='text-xs text-center w-72  ' >{item.desc}</p>
+
+              </div>
+
+            </div>
+          ))}
+        </div>
+
+      </div>
+
+
+
+
+
+      <div className='flex flex-col md:flex-row w-max-screen pb-12 h-130 bg-white' >
+        {servicesCards.map((item) => (
+          <div key={item.id} className='flex flex-col w-1/4 '>
+            <div className='flex flex-col justify-center items-center bg-[#4A6049] w-full h-full gap-12 text-white' style={{
+              backgroundImage: `linear-gradient(#00000085, #00000085), url(${item.img})`, backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }} >
+              <h4 className="text-[#99CF97] h-24 text-5xl text-center">{item.title}</h4>
+              <p className='text-lg text-center w-72 h-72 font-bold ' >{item.desc}</p>
+
+            </div>
+
+          </div>
+        ))}
+      </div>
+
+
+
+
+
+
+
+        <div className='flex flex-col md:flex-row w-max-screen justify-evenly pb-12 bg-white' >
+
+              <div className='flex flex-col justify-center items-center bg-[#4A6049] w-108 h-96 rounded-4xl gap-4 text-white' >
+                <img src="/images/about/employee 1.png"></img>
+                <h4 className="text-lg">Dedicated, Experienced Staff</h4>
+                <p className='text-sm text-center w-92  ' >At Meadowbrook Manor, many of our loyal healthcare professionals have been with us for over 20 years. Our experienced team—including board-certified Medical Directors, nurses, therapists, and directors—works together to provide consistent, personalized care 24/7, meeting all physical, emotional, and social needs.</p>
+              </div>
+
+              <div className='flex flex-col justify-center items-center bg-[#4A6049] pb-6 w-108 h-96 rounded-4xl gap-2 text-white' >
+                <img className="h-3/4"  src="/images/about/therapy.png"></img>
+                <h4 className="text-lg">In-House Therapy, 7 Days a Week</h4>
+                <p className='text-xs text-center w-80' >Unlike most rehab programs, our in-house therapists provide consistent care throughout the patient’s stay—up to 7 days a week—to ensure continuity and better outcomes.</p>
+              </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+  )
+}

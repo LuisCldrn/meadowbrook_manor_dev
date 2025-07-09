@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation';
+//import { usePathname } from 'next/navigation';
 import NavDropdown from './NavDropdown';
 
 
@@ -23,7 +23,7 @@ const navItems = [
 ]
 
 export default function Navbar() {
-    const pathname = usePathname();
+    // const pathname = usePathname();
 
     return (
         <nav className='bg-white' >
