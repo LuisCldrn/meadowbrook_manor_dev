@@ -13,7 +13,7 @@ const Footer = () => {
                     </ul>
                     <ul>
                         <li><a href="">JOIN OUR FAMILY</a></li>
-                        <li><a href="">CONTACT US</a></li>
+                        <li><a href="">CONTACT UfsdaS</a></li>
                         <li><a href="">PRIVACY POLICY</a></li>
                     </ul>
                 </div>
