@@ -3,6 +3,8 @@ import { useState } from "react";
 
 export default function Contactus() {
 
+    const mapsApiKey = process.env.NEXT_PUBLIC_MAPS_API_KEY
+
     const [activeLocation, setActiveLocation] = useState<string | null>('Meadowbrook%20Manor-Naperville%2C%20Raymond%20Drive%2C%20Naperville%2C%20IL%2C%20USA');
 
     var locations = [
@@ -38,7 +40,7 @@ export default function Contactus() {
     return (
         <div className="header_area bg-[#364635] ">
             <h2 className="p-3 text-2xl text-center justify-center font-bold" >CONTACT US</h2>
-            <iframe className="w-full h-[50vh]" loading="lazy" allowFullScreen src={`https://www.google.com/maps/embed/v1/search?q=${activeLocation}&key=AIzaSyDJoUF3HbV8hQaZYV1qo2K3MspM5UhUJv8`}></iframe>
+            <iframe className="w-full h-[50vh]" loading="lazy" allowFullScreen src={`https://www.google.com/maps/embed/v1/search?q=${activeLocation}&key=${mapsApiKey}`}></iframe>
             <div className="locations flex justify-center items-center h-[70vh]">
                 {locations.map((card, index) => (
                     <div className={`card flex w-full h-full flex-col justify-center items-start ${card.background}`} onClick={() => setActiveLocation(card.api)} >
