@@ -7,13 +7,13 @@ const Footer = () => {
       <div className="top-footer flex flex-col lg:flex-row justify-between lg:justify-center items-center gap-12 lg:gap-36">
         {/* Links */}
         <div className="links flex flex-col sm:flex-row justify-center items-center gap-10 text-start">
-          <ul className="space-y-2">
+          <ul className="pace-y-2 sm:w-72">
             <li><a href="">HOME</a></li>
             <li><a href="">WHY MEADOWBROOK</a></li>
             <li><a href="">CARE SERVICES</a></li>
             <li><a href="">SUCCESS STORIES</a></li>
           </ul>
-          <ul className="space-y-2">
+          <ul className="space-y-2 w-full">
             <li><a href="">JOIN OUR FAMILY</a></li>
             <li><a href="">CONTACT US</a></li>
             <li><a href="">PRIVACY POLICY</a></li>
