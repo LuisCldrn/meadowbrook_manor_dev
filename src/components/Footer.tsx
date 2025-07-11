@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <div className="footer px-6 py-10 flex flex-col gap-8 text-sm">
       {/* Top Footer */}
-      <div className="top-footer flex flex-col lg:flex-row justify-between lg:justify-center items-center gap-8">
+      <div className="top-footer flex flex-col lg:flex-row justify-between lg:justify-center items-center gap-12 lg:gap-36">
         {/* Links */}
-        <div className="links flex flex-col sm:flex-row justify-center items-center gap-10 text-center">
+        <div className="links flex flex-col sm:flex-row justify-center items-center gap-10 text-start">
           <ul className="space-y-2">
             <li><a href="">HOME</a></li>
             <li><a href="">WHY MEADOWBROOK</a></li>

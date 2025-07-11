@@ -98,7 +98,7 @@ export default function About() {
 
 
       {/* Images secion */}
-      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 w-max-screen pb-12 bg-white' >
+      <div className='grid grid-cols-1 md:grid-cols-2 w-max-screen pb-12 bg-white' >
         {servicesCards.map((item) => (
           <div key={item.id} className='flex flex-col '>
             <div className='flex flex-col justify-center items-center bg-[#4A6049] w-full h-full gap-12 text-white' style={{
