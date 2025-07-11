@@ -36,7 +36,7 @@ body {
   background-size: cover;
 }
 
-.Lagrance_loc {
+.Lagrange_loc {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/images/Lagrange_front.png");
   background-size: cover;
 }
@@ -51,7 +51,7 @@ body {
   background-size: cover;
 }
 
-.Lagrance_loc:hover {
+.Lagrange_loc:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/Lagrange_front.png");
   background-size: cover;
 }
