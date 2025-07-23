@@ -76,3 +76,124 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+
+
+@media only screen and (max-width: 640px) {
+  .location h2 {
+    width: 80%;
+  }
+
+  .Locations {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .location {
+    height: 35vh;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .location h2 {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+
+  .location a {
+    font-size: .8rem;
+    width: 50%;
+    border: 1px white solid;
+  }
+
+  .location {
+    height: 55vh;
+  }
+
+  .Locations {
+    height: auto;
+  }
+
+  .reviews_area {
+    padding: 10px;
+    height: 45vh;
+  }
+
+  .card_rev {
+    padding-top: 40px;
+  }
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .location h2 {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+
+  .location a {
+    font-size: .8rem;
+    width: 50%;
+    border: 1px white solid;
+  }
+
+  .Landing a {
+    width: 15vw;
+    border: #48a546 3px solid;
+  }
+
+  .Landing p {
+    font-size: .9rem;
+  }
+
+  .reviews p {
+    font-size: 0.7rem;
+  }
+
+  .rev_icon {
+    width: 12vw;
+    height: 12vw;
+    font-size: 3.5rem;
+  }
+
+  .reviews h3 {
+    font-size: 1.3rem;
+  }
+
+  .why_mead p {
+    font-size: .9rem;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 40vw;
+    height: 40vh;
+  }
+
+  .stars img {
+    width: 25px;
+  }
+
+}
+
+@media only screen and (min-width: 1280px) {
+  .location h2 {
+    width: 80%;
+  }
+
+  .card_rev {
+    font-size: .7rem;
+  }
+
+  .rev_icon {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
