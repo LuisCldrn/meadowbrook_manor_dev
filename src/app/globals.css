@@ -66,3 +66,13 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.contact-card img {
+  width: 25px;
+  height: 25px;
+}
+
+.contact-card p {
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}

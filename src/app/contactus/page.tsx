@@ -19,7 +19,7 @@ export default function Contactus() {
         }, 
         {
             name: "MEADOWBROOK LAGRANGE",
-            location: '339 S. 9th Avenue LaGrange, Illinois 60525',
+            location: '339 S. 9th Avenue La Grange, Illinois 60525',
             phone: '(708) 354-4660',
             fax: "(708) 354-0590",
             email: 'info@meadowbrookmanor.com',
@@ -43,14 +43,17 @@ export default function Contactus() {
             <iframe className="w-full h-[50vh]" loading="lazy" allowFullScreen src={`https://www.google.com/maps/embed/v1/search?q=${activeLocation}&key=${mapsApiKey}`}></iframe>
             <div className="locations flex justify-center items-center h-[70vh]">
                 {locations.map((card, index) => (
-                    <div className={`card flex w-full h-full flex-col justify-center items-start ${card.background}`} onClick={() => setActiveLocation(card.api)} >
-                        <h3>{card.name}</h3>
-                        <p>{card.location}</p>
-                        <p>{card.phone}</p>
-                        <p>{card.fax}</p>
-                        <p>{card.email}</p>
+                    <div className={`card contact-card flex text-lg w-full h-full flex-col justify-center items-start pl-[4vw] gap-4 text-left ${card.background}`} onClick={() => setActiveLocation(card.api)} >
+                        <h3 className="flex flex-row text-2xl text-left pb-10">{card.name}</h3>
+                        <p className="flex text-left w-[70%]"><img src="images\contact-us\location-pin.png" alt="" />{card.location}</p>
+                        <p className="flex text-left"><img src="images\contact-us\phone-receiver-silhouette.png" alt="" />{card.phone}</p>
+                        <p className='flex' ><img src="images\contact-us\fax.png" alt="" />{card.fax}</p>
+                        <p className='flex' ><img src="images\contact-us\email.png" alt="" />{card.email}</p>
                     </div>
                 ))}
+            </div>
+            <div className="contact_form">
+                
             </div>
         </div>
         
