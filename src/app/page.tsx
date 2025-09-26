@@ -41,7 +41,7 @@ export default function Home() {
 
           <p className="text-center" >I was a patient at Meadowbrook for 11 days for short term rehab for my back and left knee. I had never been to a rehab facility before. The entire staff at Meadowbrook were superb. The nurses and CNAs were fantastic. They were very friendly and were always checking in on me. The physical therapy workers were great...</p>
         </div>
-
+{/* ffastea */}
         <div className="card_rev w-full relative rounded-4xl flex flex-col bg-[#4A6049] items-center justify-center gap-3 pt-[75px] p-5">
 
           <div className="rev_icon absolute img_area flex items-center justify-center justify-self-start bg-blue-800 rounded-full w-[150px] h-[150px] text-7xl -top-15 ">C</div>
