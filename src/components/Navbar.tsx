@@ -13,12 +13,12 @@ const quickIcons = [
 ];
 
 const navItems = [
-    { href: '/', label: 'HOME' },
-    { href: '/about', label: 'WHY MEADOWBROOK' },
-    { href: '/careservices', label: 'CARE SERVICES' },
-    { href: '/successstories', label: 'SUCCESS STORIES' },
-    { href: '/join', label: 'JOIN OUR FAMILY' },
-    { href: '/contactus', label: 'CONTACT US' }
+    { href: '/', label: 'HOME', target: "" },
+    { href: '/about', label: 'WHY MEADOWBROOK' , target: "" },
+    { href: '/careservices', label: 'CARE SERVICES' , target: "" },
+    { href: '/successstories', label: 'SUCCESS STORIES' , target: "" },
+    { href: 'https://www.linkedin.com/company/meadowbrookrehabilitation/about/', label: 'JOIN OUR FAMILY', target: "_blank"  },
+    { href: '/contactus', label: 'CONTACT US', target: ""  }
 ];
 
 export default function Navbar() {
@@ -50,8 +50,8 @@ export default function Navbar() {
 
             {/* Desktop Nav */}
             <div className="hidden md:flex justify-center items-center px-2 bg-[#4A6049] h-[6vh] gap-8 font-semibold text-white">
-                {navItems.map(({ href, label }) => (
-                    <Link key={href} href={href} className="hover:text-gray-300 min-[701px]:text-xs">
+                {navItems.map(({ href, label, target }) => (
+                    <Link key={href} href={href} target={target} className="hover:text-gray-300 min-[701px]:text-xs">
                         {label}
                     </Link>
                 ))}
@@ -60,8 +60,8 @@ export default function Navbar() {
             {/* Mobile Nav */}
             {isOpen && (
                 <div className="md:hidden bg-[#4A6049] text-white flex flex-col items-center gap-4 py-4">
-                    {navItems.map(({ href, label }) => (
-                        <Link key={href} href={href} className="text-lg hover:text-gray-300" onClick={() => setIsOpen(false)}>
+                    {navItems.map(({ href, label, target }) => (
+                        <Link key={href} href={href} target={target} className="text-lg hover:text-gray-300" onClick={() => setIsOpen(false)}>
                             {label}
                         </Link>
                     ))}

@@ -72,44 +72,125 @@ body {
 }
 
 .contact-card p {
+  display: flex;
   gap: 2vw;
   justify-content: center;
   align-items: center;
 }
 
+.rev_icon {
+  width: 100px;
+  height: 100px;
+}
 
-
-@media only screen and (max-width: 640px) {
+/* === Desktop (min-width: 1025px) === */
+@media (min-width: 1025px) {
   .location h2 {
     width: 80%;
   }
 
-  .Locations {
-    flex-direction: column;
-    height: auto;
+  .card_rev {
+    font-size: 1rem;
   }
 
-  .location {
-    height: 35vh;
+  .rev_icon {
+    max-width: 100px;
+    max-height: 100px;
   }
 }
 
-
-
-@media only screen and (max-width: 768px) {
+/* === Tablet & Small Desktop (max-width: 1024px) === */
+@media (max-width: 1024px) {
   .location h2 {
     width: 80%;
     font-size: 1.5rem;
   }
 
   .location a {
-    font-size: .8rem;
+    font-size: 0.8rem;
     width: 50%;
-    border: 1px white solid;
+    border: 1px solid white;
   }
 
+  .Landing {
+    height: 620px;
+  }
+
+  .Landing a {
+    width: 15vw;
+    border: 3px solid #48a546;
+  }
+
+  .Landing p,
+  .why_mead p {
+    font-size: 0.9rem;
+  }
+
+  .Locations {
+    height: 600px;
+  }
+
+  .reviews p {
+    font-size: 0.7rem;
+  }
+
+  .reviews h3 {
+    font-size: 1.3rem;
+  }
+
+  .rev_icon {
+    font-size: 3.5rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .card,
+  .cards .card {
+    width: 275px;
+    height: 300px;
+  }
+
+  .stars img {
+    width: 25px;
+  }
+
+  .card_rev {
+    height: 400px;
+  }
+
+  .cards h3 {
+    font-size: 1rem;
+  }
+
+  .cards p {
+    font-size: 0.8rem;
+  }
+}
+
+/* === Tablet (max-width: 768px) === */
+@media (max-width: 768px) {
   .location {
     height: 55vh;
+  }
+
+  .location h2 {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+
+  .cards {
+    gap: 15px;
+  }
+
+  .location a {
+    font-size: 0.8rem;
+    width: 50%;
+    border: 1px solid white;
   }
 
   .Locations {
@@ -119,81 +200,148 @@ body {
   .reviews_area {
     padding: 10px;
     height: 45vh;
+    margin: 60px 5px 0 5px;
+    gap: 5px;
   }
 
   .card_rev {
     padding-top: 40px;
+    height: 325px;
   }
 
+  .cards .card {
+    width: 270px;
+  }
+
+  .cards h3 {
+    font-size: 1rem;
+  }
+
+  .cards p {
+    font-size: 0.8rem;
+  }
 }
 
-
-@media only screen and (max-width: 1024px) {
-  .location h2 {
-    width: 80%;
-    font-size: 1.5rem;
-  }
-
-  .location a {
-    font-size: .8rem;
-    width: 50%;
-    border: 1px white solid;
-  }
+/* === Mobile (max-width: 640px) === */
+@media (max-width: 640px) {
 
   .Landing a {
-    width: 15vw;
-    border: #48a546 3px solid;
+    min-width: 120px;
   }
 
-  .Landing p {
-    font-size: .9rem;
+  .location {
+    height: 35vh;
   }
 
-  .reviews p {
-    font-size: 0.7rem;
-  }
-
-  .rev_icon {
-    width: 12vw;
-    height: 12vw;
-    font-size: 3.5rem;
-  }
-
-  .reviews h3 {
-    font-size: 1.3rem;
-  }
-
-  .why_mead p {
-    font-size: .9rem;
-  }
-
-  .cards {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .card {
-    width: 40vw;
-    height: 40vh;
-  }
-
-  .stars img {
-    width: 25px;
-  }
-
-}
-
-@media only screen and (min-width: 1280px) {
   .location h2 {
     width: 80%;
+  }
+
+  .Locations {
+    flex-direction: column;
+    height: auto;
   }
 
   .card_rev {
-    font-size: .7rem;
+    height: 350px;
+    width: 270px;
+    margin-top: 50px;
   }
 
-  .rev_icon {
-    max-width: 100px;
-    max-height: 100px;
+  .cards {
+    gap: 15px;
   }
+
+  .cards .card {
+    width: 270px;
+  }
+
+  .reviews_area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+
+  .reviews {
+    height: auto;
+  }
+}
+
+form input::placeholder, input {
+  color: #666666;
+}
+
+form select {
+  color: #666666;
+}
+
+form textarea {
+  color: #666666;
+}
+
+#date {
+  color: #666666;
+}
+
+@media (min-width: 1025px) {}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 768px) {
+  .locations {
+    height: auto;
+    flex-direction: column;
+    width: full;
+  }
+
+  .locations .contact-card {
+    width: 100%;
+    gap: 5px;
+    font-size: medium;
+    text-align: center;
+  }
+
+  .locations .contact-card img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .locations .contact-card p {
+    gap: 15px;
+  }
+
+  .locations .contact-card p {
+    justify-content: start;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .locations {
+    height: auto;
+    flex-direction: column;
+    width: full;
+  }
+
+  .locations .contact-card {
+    width: 100%;
+    gap: 5px;
+    font-size: medium;
+    text-align: center;
+  }
+
+  .locations .contact-card img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .locations .contact-card p {
+    gap: 15px;
+  }
+
+  .contact-card, .contact-card h3 {
+    padding: 15px;
+  }
+
 }
