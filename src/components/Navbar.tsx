@@ -16,7 +16,7 @@ const navItems = [
     { href: '/', label: 'HOME', target: "" },
     { href: '/about', label: 'WHY MEADOWBROOK' , target: "" },
     { href: '/careservices', label: 'CARE SERVICES' , target: "" },
-    { href: '/successstories', label: 'SUCCESS STORIES' , target: "" },
+    { href: '/success-stories', label: 'SUCCESS STORIES' , target: "" },
     { href: 'https://www.linkedin.com/company/meadowbrookrehabilitation/about/', label: 'JOIN OUR FAMILY', target: "_blank"  },
     { href: '/contactus', label: 'CONTACT US', target: ""  }
 ];
