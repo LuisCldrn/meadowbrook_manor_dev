@@ -101,12 +101,12 @@ export default function About() {
       <div className='grid grid-cols-1 md:grid-cols-2 w-max-screen pb-12 bg-white' >
         {servicesCards.map((item) => (
           <div key={item.id} className='flex flex-col '>
-            <div className='flex flex-col justify-center items-center bg-[#4A6049] w-full h-full gap-12 text-white' style={{
+            <div className='flex flex-col justify-center items-center bg-[#4A6049] w-full h-128 gap-12 text-white' style={{
               backgroundImage: `linear-gradient(#00000085, #00000085), url(${item.img})`, backgroundSize: 'cover',
               backgroundPosition: 'center'
             }} >
-              <h4 className="text-[#99CF97] flex justify-center items-center h-24 text-4xl text-center">{item.title}</h4>
-              <p className='text-lg text-center w-72 h-72 font-bold ' >{item.desc}</p>
+              <h4 className="text-[#99CF97] flex justify-center items-center h-24 text-4xl text-center font-bold">{item.title}</h4>
+              <p className='text-lg text-center px-12 xl:px-40 h-60 ' >{item.desc}</p>
             </div>
           </div>
         ))}
