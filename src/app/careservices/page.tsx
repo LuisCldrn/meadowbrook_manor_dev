@@ -1,7 +1,73 @@
 
 
-export default function CareServices() {
+import TabbedCard from "@/components/TabbedCard";
 
+export default function CareServices() {
+    const specializedCareTabs = [
+        {
+            id: 'cardiac',
+            label: 'Cardiac Care',
+            content: {
+                title: 'Cardiac Care',
+                features: [
+                    'Management of patients with Congestive Heart Failure, Post-Coronary Artery Bypass Surgery, Myocardial Infarction (heart attack), and LVAD\'s',
+                    'Consultations by a Board Certified Cardiologist',
+                    'Speciality-trained staff in cardiac diseases',
+                    'On-site coumadin management, labs & diagnostic testing',
+                    'Physical, Occupational & Speech Therapies available up to 7 Days per Week'
+                ]
+            }
+        },
+        {
+            id: 'pulmonary',
+            label: 'Pulmonary Rehabilitation & Recovery',
+            content: {
+                title: 'Pulmonary Rehabilitation & Recovery',
+                features: [
+                    'Protocols for the management of Chronic Obstructive Pulmonary Disease (COPD), Pneumonia, Emphysema, Asthma and other respiratory diseases',
+                    'Consultations by a Board Certified Pulmonologist',
+                    'Evaluation & Treatment by a certified Respiratory Therapist',
+                    'Patient and staff education on managing pulmonary disease and symptoms',
+                    'Functional performance assessments & Pulmonary function testing',
+                    'Managing AVAP\'s on-site with ongoing education and training for staff and therapists',
+                    'Physical, Occupational & Speech Therapies available up to 7 Days per Week'
+                ]
+            }
+        },
+        {
+            id: 'renal',
+            label: 'Renal Management',
+            content: {
+                title: 'Renal Management',
+                features: [
+                    'In-House Hemo Dialysis',
+                    'Specialty-trained dialysis staff',
+                    'Consultations by a Board Certified Nephrologist',
+                    'Individual dialysis machines',
+                    'Nutritionist-supervised dietary program',
+                    'Working in collaboration with outpatient dialysis treatment providers'
+                ]
+            }
+        },
+        {
+            id: 'wound',
+            label: 'Wound Management Program',
+            content: {
+                title: 'Wound Management Program',
+                features: [
+                    'Designated certified wound care nurse',
+                    'Treatment of vascular, diabetic, pressure & surgical wounds',
+                    'On-site Wound Physician & Infectious Disease Specialist – consultations as needed',
+                    'Staff education focused on wound etiology and management to heighten awareness and surveillance',
+                    'Individualized treatment plans and daily consultations with the interdisciplinary team',
+                    'Wound Vac management',
+                    'Dietitian rounds for nutritional needs assessment to promote healthy wound healing',
+                    'Antibiotic Management',
+                    'Family education and communication on status, progress, and care'
+                ]
+            }
+        }
+    ];
 
     const therapyCards = [
         {
@@ -75,9 +141,23 @@ export default function CareServices() {
                 ))}
             </div>
 
-            {/* Tab section */}
-            <div className="h-128">
-                Tab section
+            {/* Specialized Care Programs Tab Section */}
+            <div className="bg-gray-50 py-16 px-4">
+                <div className="max-w-6xl mx-auto">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                            Specialized Care Programs
+                        </h2>
+                        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                            Our comprehensive specialized care programs are designed to provide expert medical care and rehabilitation services for patients with complex medical conditions.
+                        </p>
+                    </div>
+                    
+                    <TabbedCard 
+                        tabs={specializedCareTabs}
+                        className="max-w-5xl mx-auto"
+                    />
+                </div>
             </div>
 
 
